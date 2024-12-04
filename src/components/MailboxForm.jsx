@@ -13,13 +13,13 @@ const MailboxForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.addMailbox(formData);
+        props.addBox(formData);
         setFormData(initialState);
         navigate('/mailboxes');
     };
 
     const handleChange = ({ target }) => {
-        setFormData({ ...formData, [target._id]: target.value});
+        setFormData({ ...formData, [target.name]: target.value});
     };
 
     return (
