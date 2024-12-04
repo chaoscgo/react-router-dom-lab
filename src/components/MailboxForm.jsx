@@ -42,11 +42,9 @@ const MailboxForm = (props) => {
                   value={formData.boxSize}
                   onChange={handleChange}>
                 <option value="">Please choose a size</option>
-                <option value="ExtraSmall">Extra Small</option>
                 <option value="Small">Small</option>
                 <option value="Medium">Medium</option>
                 <option value="Large">Large</option>
-                <option value="ExtraLarge">Extra Large</option>
                 </select>
                 <button type="submit">Submit</button>
             </form>
